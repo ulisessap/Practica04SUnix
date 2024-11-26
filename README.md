@@ -52,7 +52,7 @@ mkdir -p deb/usr/share/man/man8: Creamos un directorio llamado man8 dentro de la
 
 sudo nano deb/usr/share/man/man8/mkbackup.8: Abrimos el editor de texto nano con permisos de superusuario (sudo) para editar o crear el archivo mkbackup.8 en el directorio deb/usr/share/man/man8/. Este archivo normalmente contendrá la página de manual para el comando mkbackup.
 
-![image](https://github.com/user-attachments/assets/a92e61fb-4964-457f-ab95-3744ae642358)
+![image](https://github.com/user-attachments/assets/3073ef71-3693-4e8f-8b5f-c2b025fc8bff)
 
 ![image](https://github.com/user-attachments/assets/e952b43a-11a8-4103-974c-9176157094ba)
 
