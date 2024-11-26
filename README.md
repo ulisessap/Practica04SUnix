@@ -1,6 +1,6 @@
 # Practica04SUnix
 
-#Creacion de paquetes .deb
+# Creacion de paquetes .deb
 ## Paquetes .deb:
 Son los paquetes de software utilizados por Debian y sus derivados (como Ubuntu). Estos paquetes contienen programas, bibliotecas y otros archivos necesarios para instalar software en el sistema. Los archivos .deb incluyen metadatos que describen el paquete, scripts que se ejecutan en varias etapas de la instalación/desinstalación (como postinst y prerm), y los archivos binarios o de configuración que se instalarán.
 
@@ -20,6 +20,7 @@ Otorgamos permisos de ejecución al archivo mkbackup.sh, lo que permite que se p
 
 mkdir -p deb/usr/bin:
 Creamos el directorio deb/usr/bin, incluyendo cualquier directorio padre necesario. Este es el directorio donde se colocará el script mkbackup.sh en la estructura del paquete.
+
 ![image](https://github.com/user-attachments/assets/6aea4934-b90c-43cf-8a21-563473e543a7)
 
 cp ./mkbackup.sh ./deb/usr/bin:
@@ -50,6 +51,12 @@ Cambia el propietario y grupo de todos los archivos y directorios dentro de deb/
 mkdir -p deb/usr/share/man/man8: Creamos un directorio llamado man8 dentro de la ruta deb/usr/share/man/. La opción -p asegura que se creen todos los directorios intermedios necesarios si no existen.
 
 sudo nano deb/usr/share/man/man8/mkbackup.8: Abrimos el editor de texto nano con permisos de superusuario (sudo) para editar o crear el archivo mkbackup.8 en el directorio deb/usr/share/man/man8/. Este archivo normalmente contendrá la página de manual para el comando mkbackup.
+
+![image](https://github.com/user-attachments/assets/a92e61fb-4964-457f-ab95-3744ae642358)
+
+![image](https://github.com/user-attachments/assets/e952b43a-11a8-4103-974c-9176157094ba)
+
+
 
 
 
