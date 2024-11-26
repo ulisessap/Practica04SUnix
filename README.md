@@ -56,6 +56,22 @@ sudo nano deb/usr/share/man/man8/mkbackup.8: Abrimos el editor de texto nano con
 
 ![image](https://github.com/user-attachments/assets/e952b43a-11a8-4103-974c-9176157094ba)
 
+sudo gzip deb/usr/share/man/man8/mkbackup.8: Comprimimos el archivo mkbackup.8 usando gzip, resultando en un archivo con la extensión .8.gz. 
+
+sudo chown -R root:root deb/: Este comando cambia el propietario y grupo de todo el contenido en el directorio deb/ a root, de forma recursiva (-R).
+
+dpkg -b deb/ .: Se crea un paquete .deb a partir del contenido del directorio deb/ en el directorio actual. El paquete generado tendrá el mismo nombre que el directorio deb/ (por ejemplo, deb.deb).
+
+sudo dpkg -i mkbackup_1.0_all.deb: Instala el paquete .deb llamado mkbackup_1.0_all.deb en el sistema, usando permisos de superusuario (sudo).
+
+man mkbackup: Muestra la página de manual del comando mkbackup, asumiendo que el archivo mkbackup.8.gz fue instalado correctamente en el directorio de manual adecuado.
+
+![image](https://github.com/user-attachments/assets/05759635-a04c-4828-9a5b-a531cdf42c82)
+
+![image](https://github.com/user-attachments/assets/21464b86-380c-40eb-a72a-57e8ed5513dd)
+
+
+
 
 
 
